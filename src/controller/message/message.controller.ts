@@ -1,12 +1,10 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { IMessageRepository } from 'src/repositories/message/interface/message.interface';
+import { MessageService } from 'src/service/message/message.service';
 
 @Controller('message')
 export class MessageController {
 
-    constructor(readonly repository: IMessageRepository) {
+    constructor(readonly repository: MessageService) {
         
     }
-
-
 }
