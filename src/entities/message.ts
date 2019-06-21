@@ -1,5 +1,6 @@
 import { BaseEntity, PrimaryGeneratedColumn, Column, Entity } from 'typeorm';
 import { Tag } from './tag';
+import { User } from './user';
 
 @Entity()
 export class Message extends BaseEntity {
