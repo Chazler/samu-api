@@ -3,6 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from 'nestjs-config';
 import { TestController } from './controller/test/test.controller';
 import * as path from 'path';
+import { MessageController } from './controller/message/message.controller';
 
 // ConfigService.rootPath = path.resolve(__dirname, '..');
 
@@ -14,6 +15,6 @@ import * as path from 'path';
         inject: [ConfigService]
     }),
   ],
-  controllers: [TestController],
+  controllers: [TestController, MessageController]
 })
 export class AppModule {}
