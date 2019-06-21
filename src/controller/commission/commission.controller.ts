@@ -1,8 +1,8 @@
 import { Controller, Post, Body, HttpCode } from '@nestjs/common';
 import { CommissionService } from '../../service/commission/commission.service';
 import { Commission } from '../../entity/Commission.entity';
-import { CreateCommissionDto } from '../../../dist/dto/commission/create-commission-dto';
 import { ApiUseTags } from '@nestjs/swagger';
+import { CreateCommissionDto } from 'src/dto/commission/create-commission-dto';
 @ApiUseTags('Commissions')
 @Controller('commissions')
 export class CommissionController {

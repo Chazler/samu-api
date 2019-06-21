@@ -1,4 +1,4 @@
-import { Message } from 'src/entities/message';
+import { Message } from 'src/entity/message.entity';
 import { IMessageRepository } from './interface/message.interface';
 
 export class MessageRepository implements IMessageRepository {

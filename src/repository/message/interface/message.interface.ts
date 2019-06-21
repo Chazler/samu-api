@@ -1,6 +1,6 @@
-import { Message } from "src/entities/message";
-import { IRepository } from "src/repositories/base/repository.interface";
-import { Repository } from "src/repositories/base/repository";
+import { Message } from "src/entity/message.entity";
+import { IRepository } from "src/repository/repository.interface";
+import { Repository } from "src/repository/base/repository";
 
 export class IMessageRepository extends Repository<Message> {
 

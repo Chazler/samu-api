@@ -1,5 +1,5 @@
 import { BaseEntity, PrimaryGeneratedColumn, Column, Entity } from 'typeorm';
-import { TagSettings } from './tagsettings';
+import { TagSettings } from './tagsettings.entity';
 
 @Entity()
 export class Tag extends BaseEntity {
