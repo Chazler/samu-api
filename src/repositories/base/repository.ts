@@ -1,8 +1,7 @@
 import { BaseEntity } from "typeorm";
-import { GenericRepository } from "./repository.interface";
+import { IRepository } from "./repository.interface";
 
-export class Repository<T extends BaseEntity> implements GenericRepository<T> {
-
+export abstract class Repository<T extends BaseEntity> implements IRepository<T> {
 
     create(item: T): Promise<boolean> {
         throw new Error("Method not implemented.");
