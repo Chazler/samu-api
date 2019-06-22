@@ -31,4 +31,10 @@ export class Message extends BaseEntity {
     @Column()
     public tags: Tag[]
 
+    @Column()
+    public deletionReason: string;
+
+    @Column()
+    public active: boolean;
+
 }

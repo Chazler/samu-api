@@ -14,4 +14,8 @@ export default class CreateMessageDto {
 
     @ApiModelProperty({ required: false })
     tags: Tag[];
+
+    @ApiModelProperty({required: true, format: 'datetime'})
+    @IsNotEmpty()
+    created: Date;
 }

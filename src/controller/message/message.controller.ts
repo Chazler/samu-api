@@ -16,12 +16,17 @@ export class MessageController {
     @HttpCode(201)
     async create(@Body() body: CreateMessageDto) {
         const message = new Message(body.title, body.content, null, Date.now(), body.tags);
-    
+
         this.messageService.create(message);
     }
 
     @Post()
     async delete(@Body() body: DeleteMessageDto) {
-        
+        var message = await this.messageService.readOne(body.messageId);
+
+        message.active = false;
+        message.deletionReason = body.reason;
+
+        this.messageService.update(message);
     }
 }
