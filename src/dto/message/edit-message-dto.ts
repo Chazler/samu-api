@@ -1,6 +1,6 @@
 import { ApiModelProperty } from "@nestjs/swagger";
 import { MaxLength } from "class-validator";
-import { Tag } from "src/entity/tag.entity";
+import { Tag } from "../../entity/tag.entity";
 
 export default class EditMessageDto {
 

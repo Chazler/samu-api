@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { Message } from "src/entity/message.entity";
 import GenericService from "../base/generic.service";
+import { Message } from "../../entity/message.entity";
 
 @Injectable()
 export class MessageService extends GenericService<Message> {

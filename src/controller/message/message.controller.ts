@@ -1,10 +1,10 @@
 import { Controller, Get, Param, Post, HttpCode, Body, Put } from '@nestjs/common';
-import { MessageService } from 'src/service/message/message.service';
-import CreateMessageDto from 'src/dto/message/create-message-dto';
-import { Message } from 'src/entity/message.entity';
-import { User } from 'src/entity/user.entity';
-import DeleteMessageDto from 'src/dto/message/delete-message-dto';
-import EditMessageDto from 'src/dto/message/edit-message-dto';
+import { MessageService } from '../../service/message/message.service';
+import CreateMessageDto from '../../dto/message/create-message-dto';
+import { Message } from '../../entity/message.entity';
+import { User } from '../../entity/user.entity';
+import DeleteMessageDto from '../../dto/message/delete-message-dto';
+import EditMessageDto from '../../dto/message/edit-message-dto';
 
 @Controller('message')
 export class MessageController {
