@@ -1,7 +1,10 @@
 import { IsNotEmpty, MaxLength, IsISO8601 } from 'class-validator';
 import { ApiModelProperty } from '@nestjs/swagger';
 
-export class CreateCommissionDto {
+export class UpdateCommissionDto {
+  @ApiModelProperty({required: true})
+  id: number;
+
   @ApiModelProperty({required: true, maxLength: 255})
   @MaxLength(255)
   name: string;
